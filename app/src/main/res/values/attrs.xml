@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- XML로 커스터마이즈할 속성들 -->
+    <declare-styleable name="MilestoneProgressView">
+        <attr name="mpv_progress" format="float" />
+        <attr name="mpv_barHeight" format="dimension" />
+        <attr name="mpv_milestoneRadius" format="dimension" />
+        <attr name="mpv_milestoneSmallRadius" format="dimension" />
+        <attr name="mpv_labelTextSize" format="dimension" />
+        <attr name="mpv_spacing" format="dimension" />
+
+        <attr name="mpv_colorBackground" format="color" />
+        <attr name="mpv_colorProgress" format="color" />
+        <attr name="mpv_colorInactive" format="color" />
+        <attr name="mpv_colorActive" format="color" />
+        <attr name="mpv_colorCompleted" format="color" />
+        <attr name="mpv_colorText" format="color" />
+        <attr name="mpv_colorShadow" format="color" />
+    </declare-styleable>
+</resources>
