@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MilestoneProgressView">
+        <attr name="progressBarHeight" format="dimension" />
+        <attr name="milestoneRadius" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="milestoneColor" format="color" />
+        <attr name="milestoneIncompleteColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="progress" format="float" />
+    </declare-styleable>
+</resources>

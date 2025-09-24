@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milestone Progress View 예제"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="프로젝트 진행도"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <com.dommpixel.milestoneprogressview.MilestoneProgressView
+        android:id="@+id/milestoneProgressView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:padding="8dp"
+        app:progressColor="#2196F3"
+        app:backgroundColor="#E0E0E0"
+        app:milestoneColor="#4CAF50"
+        app:milestoneIncompleteColor="#9E9E9E"
+        app:textColor="#333333"
+        app:progressBarHeight="8dp"
+        app:milestoneRadius="12dp"
+        app:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="학습 진행도"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <com.dommpixel.milestoneprogressview.MilestoneProgressView
+        android:id="@+id/milestoneProgressView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:padding="8dp"
+        app:progressColor="#FF5722"
+        app:backgroundColor="#FFCCBC"
+        app:milestoneColor="#4CAF50"
+        app:milestoneIncompleteColor="#9E9E9E"
+        app:textColor="#333333"
+        app:progressBarHeight="10dp"
+        app:milestoneRadius="14dp"
+        app:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="진행도 조절"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <SeekBar
+        android:id="@+id/progressSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/animateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="완료까지 애니메이션"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• SeekBar로 진행도를 조절할 수 있습니다\n• 애니메이션 버튼으로 완료까지 진행됩니다\n• 마일스톤은 프로그래밍 방식으로 설정됩니다"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:alpha="0.7" />
+
+</LinearLayout>
