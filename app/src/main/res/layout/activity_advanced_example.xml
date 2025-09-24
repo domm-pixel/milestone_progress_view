@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고급 예제"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Software Development Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소프트웨어 개발 생명주기"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.dommpixel.milestoneprogressview.MilestoneProgressView
+            android:id="@+id/progressView1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:padding="8dp" />
+
+        <!-- Learning Path Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="학습 경로"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.dommpixel.milestoneprogressview.MilestoneProgressView
+            android:id="@+id/progressView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:padding="8dp" />
+
+        <!-- Fitness Goals Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="피트니스 목표"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.dommpixel.milestoneprogressview.MilestoneProgressView
+            android:id="@+id/progressView3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="32dp"
+            android:padding="8dp" />
+
+        <!-- Control Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="컨트롤"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnAnimateAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모든 진행도 완료까지 애니메이션"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnResetAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="초기 상태로 리셋"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnRandomProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="랜덤 진행도 설정"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 각 예제는 서로 다른 색상과 스타일을 사용합니다\n• 다양한 마일스톤 구성을 보여줍니다\n• 프로그래밍 방식으로 모든 속성을 제어할 수 있습니다"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</ScrollView>

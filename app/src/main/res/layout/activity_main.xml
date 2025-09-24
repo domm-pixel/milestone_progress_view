@@ -81,12 +81,20 @@
         android:layout_height="wrap_content"
         android:text="완료까지 애니메이션"
         android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/advancedExampleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="고급 예제 보기"
+        android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="• SeekBar로 진행도를 조절할 수 있습니다\n• 애니메이션 버튼으로 완료까지 진행됩니다\n• 마일스톤은 프로그래밍 방식으로 설정됩니다"
+        android:text="• SeekBar로 진행도를 조절할 수 있습니다\n• 애니메이션 버튼으로 완료까지 진행됩니다\n• 마일스톤은 프로그래밍 방식으로 설정됩니다\n• 고급 예제에서 더 많은 기능을 확인하세요"
         android:textSize="14sp"
         android:lineSpacingExtra="4dp"
         android:alpha="0.7" />

@@ -1,5 +1,6 @@
 package com.example.milestoneprogressview
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.SeekBar
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var milestoneProgressView2: MilestoneProgressView
     private lateinit var progressSeekBar: SeekBar
     private lateinit var animateButton: Button
+    private lateinit var advancedExampleButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         milestoneProgressView2 = findViewById(R.id.milestoneProgressView2)
         progressSeekBar = findViewById(R.id.progressSeekBar)
         animateButton = findViewById(R.id.animateButton)
+        advancedExampleButton = findViewById(R.id.advancedExampleButton)
     }
 
     private fun setupMilestones() {
@@ -73,6 +76,12 @@ class MainActivity : AppCompatActivity() {
             milestoneProgressView1.animateProgress(1.0f, 2000L)
             milestoneProgressView2.animateProgress(1.0f, 2000L)
             progressSeekBar.progress = 100
+        }
+
+        // Setup advanced example button
+        advancedExampleButton.setOnClickListener {
+            val intent = Intent(this, AdvancedExampleActivity::class.java)
+            startActivity(intent)
         }
     }
 }
